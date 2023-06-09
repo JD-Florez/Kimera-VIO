@@ -35,12 +35,18 @@ find_package(GTSAM REQUIRED)
 find_package(opengv REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(DBoW2 REQUIRED)
+
+set(DBoW2_INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include/DBoW2)
+set(DBoW2_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include/DBoW2)
+
+
 if(NOT TARGET DBoW2::DBoW2)
   add_library(DBoW2::DBoW2 INTERFACE IMPORTED)
   set_target_properties(DBoW2::DBoW2 PROPERTIES
   INTERFACE_LINK_LIBRARIES "${DBoW2_LIBRARIES}"
   INTERFACE_INCLUDE_DIRECTORIES "${DBoW2_INCLUDE_DIRS}")
 endif()
+
 find_package(KimeraRPGO REQUIRED)
 # Pangolin is optional
 find_package(Pangolin QUIET)

@@ -17,6 +17,8 @@
 #include <Eigen/Core>
 
 #include <opencv2/core.hpp>
+#include <opencv2/viz/viz3d.hpp>
+
 
 #include <gtsam/geometry/Cal3_S2.h>
 #include <gtsam/geometry/PinholeCamera.h>
