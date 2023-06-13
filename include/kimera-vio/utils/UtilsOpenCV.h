@@ -31,7 +31,7 @@
 // This is only added so that everybody that adds
 // this file to have Timestamp for example does
 // not complain for now.
-#include "kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
 
 // TODO(Toni): do not forward declare that much!!
 // Forward declare classes.

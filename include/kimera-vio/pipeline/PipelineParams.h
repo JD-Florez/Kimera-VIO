@@ -13,7 +13,7 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

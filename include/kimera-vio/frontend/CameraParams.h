@@ -22,10 +22,10 @@
 #include <gtsam/geometry/Cal3DS2.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

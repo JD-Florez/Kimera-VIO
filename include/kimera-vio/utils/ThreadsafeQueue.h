@@ -25,9 +25,9 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/Statistics.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
 
 namespace VIO {
 

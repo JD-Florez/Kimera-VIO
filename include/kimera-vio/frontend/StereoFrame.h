@@ -37,11 +37,11 @@
 #include <gtsam/geometry/Cal3_S2.h>
 #include <gtsam/geometry/StereoPoint2.h>
 
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoFrame-definitions.h"
-#include "kimera-vio/frontend/StereoMatchingParams.h"
-#include "kimera-vio/utils/UtilsGeometry.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatchingParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsGeometry.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

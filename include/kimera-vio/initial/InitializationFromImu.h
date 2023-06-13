@@ -17,11 +17,11 @@
 #include <gtsam/base/Vector.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
 
 namespace VIO {
 

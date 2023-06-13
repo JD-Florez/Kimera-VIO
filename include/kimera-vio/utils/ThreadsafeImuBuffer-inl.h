@@ -42,8 +42,8 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
 
 namespace VIO {
 

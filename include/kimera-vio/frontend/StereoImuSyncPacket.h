@@ -19,8 +19,8 @@
 #include <gtsam/base/Vector.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/frontend/FrontendInputPacketBase.h"
-#include "kimera-vio/frontend/StereoFrame.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendInputPacketBase.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
 
 namespace VIO {
 

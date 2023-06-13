@@ -35,7 +35,7 @@
 #include <string>
 #include <vector>
 
-#include "kimera-vio/utils/Accumulator.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Accumulator.h"
 
 ///
 // Example usage:

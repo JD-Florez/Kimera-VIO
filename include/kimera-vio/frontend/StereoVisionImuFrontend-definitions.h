@@ -14,9 +14,9 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/FrontendOutputPacketBase.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/VisionImuFrontend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendOutputPacketBase.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend-definitions.h"
 
 namespace VIO {
 

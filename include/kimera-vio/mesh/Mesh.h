@@ -24,9 +24,9 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/SerializationOpenCv.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/SerializationOpenCv.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

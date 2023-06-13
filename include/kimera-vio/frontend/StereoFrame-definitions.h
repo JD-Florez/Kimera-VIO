@@ -16,8 +16,8 @@
 
 #include <gtsam/geometry/StereoPoint2.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/Tracker-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
 
 namespace VIO {
 

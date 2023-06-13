@@ -38,7 +38,7 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
 
 namespace VIO {
 

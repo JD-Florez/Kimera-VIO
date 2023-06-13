@@ -14,12 +14,12 @@
 
 #pragma once
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/Tracker-definitions.h"
-#include "kimera-vio/frontend/VisionImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

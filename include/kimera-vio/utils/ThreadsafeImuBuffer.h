@@ -42,9 +42,9 @@
 
 #include <Eigen/Dense>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/utils/ThreadsafeTemporalBuffer.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeTemporalBuffer.h"
 
 namespace VIO {
 

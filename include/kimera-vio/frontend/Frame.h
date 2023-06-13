@@ -33,9 +33,9 @@
 #include <gtsam/base/Matrix.h>
 #include <gtsam/geometry/PinholeCamera.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

@@ -14,8 +14,8 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/StereoFrame-definitions.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
 
 #include <opencv2/calib3d.hpp> // Only for StereoBM (put in another file).
 

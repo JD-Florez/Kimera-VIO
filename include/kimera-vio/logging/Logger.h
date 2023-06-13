@@ -20,9 +20,9 @@
 #include <string>
 #include <unordered_map>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
-#include "kimera-vio/mesh/Mesh.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
 
 namespace VIO {
 

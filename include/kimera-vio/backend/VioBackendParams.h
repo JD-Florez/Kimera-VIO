@@ -28,10 +28,10 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 
