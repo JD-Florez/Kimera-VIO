@@ -14,7 +14,7 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/feature-detector/anms/anms.h"  // REMOVE
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/anms.h"  // REMOVE
 
 namespace VIO {
 

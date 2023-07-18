@@ -25,13 +25,13 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictor-definitions.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictor-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

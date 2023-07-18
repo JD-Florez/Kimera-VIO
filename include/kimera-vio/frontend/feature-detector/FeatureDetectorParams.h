@@ -14,9 +14,9 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
-#include "kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
 
 namespace VIO {
 

@@ -31,7 +31,7 @@
 #include "kimera-vio/utils/Timer.h"
 
 DEFINE_int32(dataset_type, 0, "Type of parser to use:\n "
-                              "0: Euroc \n 1: Kitti (not supported).");
+                              "0: Euroc");
 DEFINE_string(
     params_folder_path,
     "../params/Euroc",
@@ -65,12 +65,9 @@ int main(int argc, char* argv[]) {
         }
       }
     } break;
-    case 1: {
-      dataset_parser = VIO::make_unique<VIO::KittiDataProvider>();
-    } break;
     default: {
       LOG(FATAL) << "Unrecognized dataset type: " << FLAGS_dataset_type << "."
-                 << " 0: EuRoC, 1: Kitti.";
+                 << " 0: EuRoC";
     }
   }
   CHECK(dataset_parser);

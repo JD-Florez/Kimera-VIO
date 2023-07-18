@@ -24,9 +24,9 @@
 #include <gtsam/geometry/PinholeCamera.h>
 #include <gtsam/geometry/Point3.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

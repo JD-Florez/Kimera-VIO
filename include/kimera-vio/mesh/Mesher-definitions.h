@@ -22,10 +22,10 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

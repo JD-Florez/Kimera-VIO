@@ -22,18 +22,18 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/utils/Histogram.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Histogram.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#include "kimera-vio/third_party/triangle/triangle.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/third_party/triangle/triangle.h"
 
 #ifdef __cplusplus
 }

@@ -17,8 +17,8 @@
 #include <string>
 #include <vector>
 
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

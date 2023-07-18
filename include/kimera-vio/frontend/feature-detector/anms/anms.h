@@ -30,7 +30,7 @@ SOFTWARE.
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/feature-detector/anms/range-tree/ranget.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/range-tree/ranget.h"
 
 namespace anms {
 

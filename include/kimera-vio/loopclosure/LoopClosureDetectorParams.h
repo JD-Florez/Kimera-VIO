@@ -21,9 +21,9 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

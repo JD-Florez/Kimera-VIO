@@ -4,7 +4,8 @@
 
 # Specify path of the EuRoC dataset.
 # The path can be absolute, or relative to this file location.
-DATASET_PATH="/path/to/euroc/dataset"
+#DATASET_PATH="/path/to/euroc/dataset"
+DATASET_PATH="/home/jdflo/Euroc/V2_01_easy"
 
 # Specify: 0 to run on EuRoC data, 1 to run on Kitti (not supported)
 DATASET_TYPE=0
@@ -21,18 +22,22 @@ LOG_OUTPUT=0
 # All paths can be absolute or relative to this file location.
 
 # Build path: specify where the executable for Kimera is.
-BUILD_PATH="../build"
+# BUILD_PATH="../build"
+BUILD_PATH="/home/jdflo/satslam/src/SatSLAM/Thirdparty/Kimera-VIO/build"
 
 # Params path: specify where the parameters for Kimera are.
-PARAMS_PATH="../params/Euroc"
+# PARAMS_PATH="../params/Euroc"
+PARAMS_PATH="/home/jdflo/satslam/src/SatSLAM/Thirdparty/Kimera-VIO/params/Euroc"
 # PARAMS_PATH="../params/EurocMono"  # use this for monocular-mode (left cam only)
 
 # Vocabulary path: specify where the vocabulary for loop closure is.
-VOCABULARY_PATH="../vocabulary"
+# VOCABULARY_PATH="../vocabulary"
+VOCABULARY_PATH="/home/jdflo/satslam/src/SatSLAM/Thirdparty/Kimera-VIO/vocabulary"
 
 # Output path: specify where the output logs will be written.
 # (only used if LOG_OUTPUT is enabled)
-OUTPUT_PATH="../output_logs"
+# OUTPUT_PATH="../output_logs"
+OUTPUT_PATH="/home/jdflo/satslam/src/SatSLAM/Thirdparty/Kimera-VIO/output_logs"
 ###################################################################
 
 # Parse Options.
@@ -70,22 +75,16 @@ fi
 # independent of where we call it from.
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
+echo """ parent path: $parent_path"""
 
-echo """ Launching:
 
-            ██╗  ██╗██╗███╗   ███╗███████╗██████╗  █████╗
-            ██║ ██╔╝██║████╗ ████║██╔════╝██╔══██╗██╔══██╗
-            █████╔╝ ██║██╔████╔██║█████╗  ██████╔╝███████║
-            ██╔═██╗ ██║██║╚██╔╝██║██╔══╝  ██╔══██╗██╔══██║
-            ██║  ██╗██║██║ ╚═╝ ██║███████╗██║  ██║██║  ██║
-            ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
-
- """
 
 # Execute stereoVIOEuroc with given flags.
 # The flag --help will provide you with information about what each flag
 # does.
-$BUILD_PATH/stereoVIOEuroc \
+echo """ build path: $BUILD_PATH"""
+echo """ dataset type $DATASET_TYPE """
+$BUILD_PATH/stereoVIOEuroc 
   --dataset_type="$DATASET_TYPE" \
   --dataset_path="$DATASET_PATH" \
   --initial_k=50 \
@@ -109,8 +108,10 @@ $BUILD_PATH/stereoVIOEuroc \
   --visualize_frontend_images=1 \
   --output_path="$OUTPUT_PATH"
 
+echo """ WOW """
+
 # If in debug mode, you can run gdb to trace problems.
-#export PARAMS_PATH=../params/Euroc
-#export DATASET_PATH=/home/tonirv/datasets/EuRoC/V1_01_easy
-#gdb --args ../build/stereoVIOEuroc --flagfile="$PARAMS_PATH/flags/stereoVIOEuroc.flags" --flagfile="$PARAMS_PATH/flags/Mesher.flags" --flagfile="$PARAMS_PATH/flags/VioBackend.flags" --flagfile="$PARAMS_PATH/flags/RegularVioBackend.flags" --flagfile="$PARAMS_PATH/flags/Visualizer3D.flags" --logtostderr=1 --colorlogtostderr=1 --log_prefix=0 --dataset_path="$DATASET_PATH" --params_folder_path="$PARAMS_PATH" --initial_k=50 --final_k=2000 --vocabulary_path="../vocabulary/ORBvoc.yml" --use_lcd="0" --v=0 --vmodule=VioBackend=0 --dataset_type="0" --log_output="0" --output_path="../output_logs/"
+export PARAMS_PATH="/home/jdflo/satslam/src/SatSLAM/Thirdparty/Kimera-VIO/params/Euroc"
+export DATASET_PATH="/home/jdflo/Euroc/V2_01_easy"
+gdb --args ../build/stereoVIOEuroc --flagfile="$PARAMS_PATH/flags/stereoVIOEuroc.flags" --flagfile="$PARAMS_PATH/flags/Mesher.flags" --flagfile="$PARAMS_PATH/flags/VioBackend.flags" --flagfile="$PARAMS_PATH/flags/RegularVioBackend.flags" --flagfile="$PARAMS_PATH/flags/Visualizer3D.flags" --logtostderr=1 --colorlogtostderr=1 --log_prefix=0 --dataset_path="$DATASET_PATH" --params_folder_path="$PARAMS_PATH" --initial_k=50 --final_k=2000 --vocabulary_path="../vocabulary/ORBvoc.yml" --use_lcd="0" --v=0 --vmodule=VioBackend=0 --dataset_type="0" --log_output="0" --output_path="../output_logs/"
 
