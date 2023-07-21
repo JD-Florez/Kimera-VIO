@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/mesh/Mesher.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
 
 #include <utility>  // for make_pair
 #include <vector>
@@ -27,8 +27,8 @@
 #include <boost/archive/text_iarchive.hpp>
 #include <boost/archive/text_oarchive.hpp>
 
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 // General functionality for the mesher.
 DEFINE_bool(add_extra_lmks_from_stereo,

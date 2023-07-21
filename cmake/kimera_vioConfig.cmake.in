@@ -1,7 +1,15 @@
-get_filename_component(KimeraVIO_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(KimeraVIO_CMAKE_DIR "${CMAKE_INSTALL_PREFIX}/lib/cmake/kimera-vio")
+message(STATUS "In kimera_vioConfig, KimeraVIO_CMAKE_DIR is: ${KimeraVIO_CMAKE_DIR}")
+
+# Add the path containing CMakeFindDependencyMacro.cmake to CMAKE_MODULE_PATH
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_INSTALL_PREFIX}/lib/cmake/kimera-vio")
+#list(APPEND CMAKE_MODULE_PATH ${KimeraVIO_CMAKE_DIR})
+
+# Rest of your find_dependency calls and other configuration
+message(STATUS "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
+
 include(CMakeFindDependencyMacro)
 
-list(APPEND CMAKE_MODULE_PATH ${KimeraVIO_CMAKE_DIR})
 
 find_dependency(Boost REQUIRED)
 if(NOT TARGET Boost::boost)
@@ -24,5 +32,10 @@ find_dependency(KimeraRPGO REQUIRED)
 list(REMOVE_AT CMAKE_MODULE_PATH -1)
 
 if(NOT TARGET kimera_vio)
-  include("${KimeraVIO_CMAKE_DIR}/kimera_vioTargets.cmake")
+  message(STATUS "In kimera_vioConfig, NOT TARGET kimera_vio! including targets as:\n ${KimeraVIO_CMAKE_DIR}/kimera_vioTargets.cmake")
+  message(STATUS "CMAKE_MODULE_PATH: ${CMAKE_MODULE_PATH}")
+
+  include("${CMAKE_INSTALL_PREFIX}/lib/cmake/kimera-vio/kimera_vioTargets.cmake")
+  # include("${KimeraVIO_CMAKE_DIR}/kimera_vioTargets.cmake")
+
 endif()

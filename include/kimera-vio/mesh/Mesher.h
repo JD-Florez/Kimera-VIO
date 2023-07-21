@@ -173,7 +173,7 @@ class Mesher {
       const KeypointsCV& keypoints,
       MeshIndices* vtx_indices = nullptr) {
     // input/output structure for triangulation
-    struct triangulateio in, out;
+    triangulateio in, out;
     int32_t k;
 
     // Input number of points and point list

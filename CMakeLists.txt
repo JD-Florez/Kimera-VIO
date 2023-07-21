@@ -307,43 +307,77 @@ configure_package_config_file(
   INSTALL_DESTINATION ${INSTALL_CONFIGDIR}
 )
 
-option(EXPORT_KIMERA "Export kimera_vio instead of installing it." OFF)
-if(EXPORT_KIMERA)
-  export(TARGETS ${PROJECT_NAME}
-         FILE kimera_vioTargets.cmake)
-       export(PACKAGE ${PROJECT_NAME})
-else(EXPORT_KIMERA)
-  include(GNUInstallDirs)
-  ## First of all, we need to install the library itself.
-  install(TARGETS ${PROJECT_NAME}
-      EXPORT kimera_vio-export
-      LIBRARY DESTINATION lib
-      ARCHIVE DESTINATION lib
-      # Perhaps use this, instead of installing include dir
-      #PUBLIC_HEADER DESTINATION include
-      INCLUDES DESTINATION include # We need this right?
-      RUNTIME DESTINATION bin
-  )
-  install(EXPORT kimera_vio-export
-    FILE
-      kimera_vioTargets.cmake
-    DESTINATION
-      ${INSTALL_CONFIGDIR}
-  )
-  # Install header files
-  install(DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/
-    DESTINATION include
-    FILES_MATCHING PATTERN "*.h")
+# option(EXPORT_KIMERA "Export kimera_vio instead of installing it." OFF)
+# if(EXPORT_KIMERA)
+#   export(TARGETS ${PROJECT_NAME}
+#          FILE kimera_vioTargets.cmake)
+#        export(PACKAGE ${PROJECT_NAME})
+# else(EXPORT_KIMERA)
+#   include(GNUInstallDirs)
+#   ## First of all, we need to install the library itself.
+#   install(TARGETS ${PROJECT_NAME}
+#       EXPORT kimera_vio-export
+#       LIBRARY DESTINATION lib
+#       ARCHIVE DESTINATION lib
+#       # Perhaps use this, instead of installing include dir
+#       #PUBLIC_HEADER DESTINATION include
+#       INCLUDES DESTINATION include # We need this right?
+#       RUNTIME DESTINATION bin
+#   )
+#   install(EXPORT kimera_vio-export
+#     FILE
+#       kimera_vioTargets.cmake
+#     DESTINATION
+#       ${INSTALL_CONFIGDIR}
+#   )
+#   # Install header files
+#   install(DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/
+#     DESTINATION include
+#     FILES_MATCHING PATTERN "*.h")
 
-  ## Install the config and configversion
-  install(FILES
-      ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
-      ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
-      ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGflags.cmake
-      ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGlog.cmake
-      DESTINATION ${INSTALL_CONFIGDIR}
-  )
-endif(EXPORT_KIMERA)
+#   ## Install the config and configversion
+#   install(FILES
+#       ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
+#       ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
+#       ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGflags.cmake
+#       ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGlog.cmake
+#       DESTINATION ${INSTALL_CONFIGDIR}
+#   )
+# endif(EXPORT_KIMERA)
+
+## First of all, we need to install the library itself.
+install(TARGETS ${PROJECT_NAME}
+  EXPORT kimera_vio-export
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  # Perhaps use this, instead of installing include dir
+  #PUBLIC_HEADER DESTINATION include
+  INCLUDES DESTINATION include # We need this right?
+  RUNTIME DESTINATION bin
+)
+install(EXPORT kimera_vio-export
+  FILE
+    kimera_vioTargets.cmake
+  DESTINATION
+    ${INSTALL_CONFIGDIR}
+)
+# Install header files
+install(DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/include/
+  DESTINATION include
+  FILES_MATCHING PATTERN "*.h")
+
+## Install the config and configversion
+install(FILES
+  # ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
+  # ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
+  ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGflags.cmake
+  ${CMAKE_CURRENT_LIST_DIR}/cmake/FindGlog.cmake
+  DESTINATION ${INSTALL_CONFIGDIR}
+)
+
+export(TARGETS ${PROJECT_NAME} FILE kimera_vioTargets.cmake)
 
 ################################################################################
 # Print configuration variables

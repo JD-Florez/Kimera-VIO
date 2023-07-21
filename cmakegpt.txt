@@ -1,0 +1,171 @@
+cmake_minimum_required (VERSION 3.5)
+project(kimera_vio VERSION 1.0 LANGUAGES CXX C)
+
+# Make sure that custom modules like FindXXXX are found
+# Prefer to use system installation of gflags/glog
+set(GFLAGS_PREFER_EXPORTED_GFLAGS_CMAKE_CONFIGURATION TRUE)
+set(GLOG_PREFER_EXPORTED_GLOG_CMAKE_CONFIGURATION TRUE)
+list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake)
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
+message(STATUS "==============================================================")
+message(STATUS "====================  Dependencies ===========================")
+
+### System Dependencies
+find_package(Boost REQUIRED COMPONENTS
+  filesystem serialization regex timer date_time thread)
+if(NOT TARGET Boost::boost)
+  add_library(Boost::boost INTERFACE IMPORTED)
+  set_target_properties(Boost::boost PROPERTIES
+  INTERFACE_LINK_LIBRARIES "${Boost_LIBRARIES}"
+  INTERFACE_INCLUDE_DIRECTORIES "${Boost_INCLUDE_DIRS}")
+endif()
+
+find_package(Gflags REQUIRED)
+find_package(Glog 0.3.5 REQUIRED)
+find_package(GTSAM REQUIRED)
+find_package(opengv REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(DBoW2 REQUIRED)
+
+set(DBoW2_INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include/DBoW2)
+set(DBoW2_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include/DBoW2)
+
+
+if(NOT TARGET DBoW2::DBoW2)
+  add_library(DBoW2::DBoW2 INTERFACE IMPORTED)
+  set_target_properties(DBoW2::DBoW2 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "${DBoW2_LIBRARIES}"
+  INTERFACE_INCLUDE_DIRECTORIES "${DBoW2_INCLUDE_DIRS}")
+endif()
+
+find_package(KimeraRPGO REQUIRED)
+# Pangolin is optional
+find_package(Pangolin QUIET)
+
+include(VerifyGtsamConfig)
+option(KIMERA_VERIFY_GTSAM_CONFIG "Check that GTSAM was compiled with the right options" ON)
+if (KIMERA_VERIFY_GTSAM_CONFIG)
+    verify_gtsam_config()
+endif()
+
+### External Dependencies
+include(ExternalProject)
+
+### Download and unzip the vocabularly file
+if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/ORBvoc.yml)
+  message(STATUS "Downloading vocabulary file from dropbox.")
+  file(DOWNLOAD
+       http://www.dropbox.com/s/lyo0qgbdxn6eg6o/ORBvoc.zip?dl=1
+       ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/ORBvoc.zip
+       SHOW_PROGRESS
+       STATUS orbvoc_download_success
+       TIMEOUT 60)
+  if(orbvoc_download_success)
+    message(STATUS "Unzipping vocabulary file.")
+
+    execute_process(COMMAND ${CMAKE_COMMAND} -E tar xzf ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/ORBvoc.zip
+                            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/)
+    message(STATUS "Moving vocabulary file.")
+    execute_process(COMMAND ${CMAKE_COMMAND} -E copy_directory
+                    ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/ORBvoc/
+                    ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/)
+    execute_process(COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_CURRENT_SOURCE_DIR}/vocabulary/ORBvoc/)
+  else(orbvoc_download_success)
+    message(STATUS "Failed to download vocabulary file. Please download manually.")
+  endif(orbvoc_download_success)
+else()
+  message(STATUS "Vocabulary file exists, will not download.")
+endif()
+
+### Compile the code
+add_library(${PROJECT_NAME} SHARED "")
+
+# Add all the subdirectories containing source files for the library
+# (Assuming the subdirectories have their own CMakeLists.txt to define sources)
+add_subdirectory(include/kimera-vio/dataprovider)
+add_subdirectory(src/dataprovider)
+add_subdirectory(include/kimera-vio/playground)
+# Add other subdirectories for the rest of the source files...
+
+# Link the required libraries to your project library
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        opengv
+        DBoW2::DBoW2
+        KimeraRPGO
+    PUBLIC
+        Boost::boost
+        ${OpenCV_LIBRARIES}
+        ${GFLAGS_LIBRARIES}
+        ${GLOG_LIBRARIES}
+        gtsam
+        gtsam_unstable
+)
+
+# Set include directories for the project library
+target_include_directories(${PROJECT_NAME}
+    PUBLIC
+        ${OpenCV_INCLUDE_DIRS}
+        ${GFLAGS_INCLUDE_DIRS}
+        ${GLOG_INCLUDE_DIRS}
+        ${GTSAM_INCLUDE_DIR}
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+)
+
+# ... Existing code ...
+
+
+# Add an alias for the library target so that it can be used with the target name kimera_vio::kimera_vio
+add_library(kimera_vio::kimera_vio ALIAS ${PROJECT_NAME})
+
+# ... Existing code ...
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+# Install the library and its headers
+install(TARGETS ${PROJECT_NAME}
+    EXPORT kimera_vio-export
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    RUNTIME DESTINATION bin
+)
+
+# Install header files
+install(DIRECTORY include/ DESTINATION include)
+
+# Export the library target for other projects to use
+install(EXPORT kimera_vio-export
+    FILE kimera_vioTargets.cmake
+    NAMESPACE kimera_vio::
+    DESTINATION lib/cmake/kimera_vio
+)
+
+# Create and install the config and configversion files
+include(CMakePackageConfigHelpers)
+write_basic_package_version_file(
+    ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
+    VERSION ${PROJECT_VERSION}
+    COMPATIBILITY AnyNewerVersion
+)
+
+configure_package_config_file(
+    ${CMAKE_CURRENT_LIST_DIR}/cmake/kimera_vioConfig.cmake.in
+    ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
+    INSTALL_DESTINATION lib/cmake/kimera_vio
+)
+
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfig.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/kimera_vioConfigVersion.cmake
+    DESTINATION lib/cmake/kimera_vio
+)
+
+# ... Existing code ...
