@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/DisplayFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayFactory.h"
 
 namespace VIO {
 

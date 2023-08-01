@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/PangolinDisplay.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/PangolinDisplay.h"
 
 #include <glog/logging.h>
 
@@ -20,8 +20,8 @@
 #include <pangolin/scene/axis.h>
 #include <pangolin/scene/scenehandler.h>
 
-#include "kimera-vio/visualizer/DisplayParams.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"  // Needed for shutdown cb
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"  // Needed for shutdown cb
 
 namespace VIO {
 

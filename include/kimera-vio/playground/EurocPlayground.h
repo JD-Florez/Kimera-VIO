@@ -23,17 +23,17 @@
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/dataprovider/DataProviderModule.h"
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/DisplayFactory.h"
-#include "kimera-vio/visualizer/DisplayModule.h"
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3DFactory.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayFactory.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3DFactory.h"
 
 namespace VIO {
 

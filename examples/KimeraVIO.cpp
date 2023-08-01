@@ -20,15 +20,15 @@
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/dataprovider/KittiDataProvider.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/pipeline/Pipeline.h"
-#include "kimera-vio/pipeline/MonoImuPipeline.h"
-#include "kimera-vio/pipeline/StereoImuPipeline.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/KittiDataProvider.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/MonoImuPipeline.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/StereoImuPipeline.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 DEFINE_int32(dataset_type, 0, "Type of parser to use:\n "
                               "0: Euroc");

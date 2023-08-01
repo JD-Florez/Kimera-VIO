@@ -22,15 +22,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#include "kimera-vio/frontend/feature-detector/anms/anms.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/anms.h"
 
 #include <stdlib.h>
 #include <iostream>
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/feature-detector/anms/nanoflann.hpp"
-#include "kimera-vio/frontend/feature-detector/anms/range-tree/ranget.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/nanoflann.hpp"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/range-tree/ranget.h"
 
 namespace anms {
 

@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
 
 #include <Eigen/Core>
 
@@ -28,10 +28,10 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoMatchingParams.h"
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatchingParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

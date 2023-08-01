@@ -14,8 +14,8 @@
 
 #include <memory>
 
-#include "kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
-#include "kimera-vio/frontend/MonoVisionImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend.h"
 
 DEFINE_bool(log_mono_matching_images,
             false,

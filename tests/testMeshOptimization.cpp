@@ -15,8 +15,8 @@
 #include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/mesh/MeshOptimization.h"
-#include "kimera-vio/mesh/MeshUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshOptimization.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshUtils.h"
 
 DECLARE_string(test_data_path);
 

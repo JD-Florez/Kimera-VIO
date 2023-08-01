@@ -16,10 +16,10 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
 
 namespace VIO {
 

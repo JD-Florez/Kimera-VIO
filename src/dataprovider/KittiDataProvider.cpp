@@ -12,12 +12,12 @@
  * @author Antoni Rosinol
  * @author Yun Chang
  */
-#include "kimera-vio/dataprovider/KittiDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/KittiDataProvider.h"
 
 #include <opencv2/core/core.hpp>
 
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
 
 namespace VIO {
 

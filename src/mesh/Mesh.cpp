@@ -12,13 +12,13 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/mesh/Mesh.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
 
 #include <glog/logging.h>
 
 #include <opencv2/core/core.hpp>
 
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 namespace VIO {
 

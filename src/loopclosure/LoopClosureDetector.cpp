@@ -14,7 +14,7 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/loopclosure/LoopClosureDetector.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector.h"
 
 #include <KimeraRPGO/RobustSolver.h>
 #include <gflags/gflags.h>
@@ -30,10 +30,10 @@
 #include <string>
 #include <vector>
 
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 DEFINE_string(vocabulary_path,
               "../vocabulary/ORBvoc.yml",

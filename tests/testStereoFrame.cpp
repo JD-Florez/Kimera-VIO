@@ -22,12 +22,12 @@
 
 #include <gtsam/geometry/StereoCamera.h>
 
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 DECLARE_string(test_data_path);
 

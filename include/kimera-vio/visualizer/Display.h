@@ -14,10 +14,10 @@
 
 #pragma once
 
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
-#include "kimera-vio/visualizer/DisplayParams.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 namespace VIO {
 

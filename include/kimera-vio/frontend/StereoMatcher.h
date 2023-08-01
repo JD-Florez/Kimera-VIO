@@ -15,9 +15,9 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatchingParams.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatchingParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

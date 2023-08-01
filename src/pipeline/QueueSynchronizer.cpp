@@ -12,12 +12,12 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/pipeline/QueueSynchronizer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/QueueSynchronizer.h"
 
 #include <numeric>  // for numeric_limits
 #include <string>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
 
 namespace VIO {}  // namespace VIO

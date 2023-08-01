@@ -18,7 +18,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

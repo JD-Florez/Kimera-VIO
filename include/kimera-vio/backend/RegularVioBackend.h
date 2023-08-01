@@ -22,10 +22,10 @@
 
 #include <gtsam/slam/StereoFactor.h>
 
-#include "kimera-vio/backend/RegularVioBackend-definitions.h"
-#include "kimera-vio/backend/RegularVioBackendParams.h"
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/backend/VioBackend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend.h"
 
 namespace VIO {
 

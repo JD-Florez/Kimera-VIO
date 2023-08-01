@@ -13,7 +13,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/dataprovider/DataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderModule.h"
 
 namespace VIO {
 

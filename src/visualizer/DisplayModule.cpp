@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/DisplayModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayModule.h"
 
 #include <glog/logging.h>
 

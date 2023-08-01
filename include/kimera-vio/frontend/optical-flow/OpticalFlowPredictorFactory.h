@@ -15,8 +15,8 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictor-definitions.h"
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictor-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
 
 namespace VIO {
 

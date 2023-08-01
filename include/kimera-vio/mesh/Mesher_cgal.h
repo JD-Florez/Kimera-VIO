@@ -27,7 +27,7 @@
 #include <CGAL/Scale_space_surface_reconstruction_3.h>
 #include <CGAL/Timer.h>
 
-#include "kimera-vio/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/Frame.h"
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel;
 typedef CGAL::Scale_space_surface_reconstruction_3<Kernel> Reconstruction;

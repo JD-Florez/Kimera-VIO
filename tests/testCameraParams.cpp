@@ -25,7 +25,7 @@
 #include <gtsam/geometry/Pose3.h>
 #include <gtsam/geometry/Rot3.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
 
 DECLARE_string(test_data_path);
 

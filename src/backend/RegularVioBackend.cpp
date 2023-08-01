@@ -18,7 +18,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/backend/RegularVioBackend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackend.h"
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
@@ -26,8 +26,8 @@
 #include <gtsam/slam/PriorFactor.h>
 #include <gtsam/slam/ProjectionFactor.h>
 
-#include "kimera-vio/factors/PointPlaneFactor.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/factors/PointPlaneFactor.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 DEFINE_int32(min_num_of_observations,
              2,

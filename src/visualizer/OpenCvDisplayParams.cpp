@@ -12,11 +12,11 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/OpenCvDisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplayParams.h"
 
 #include <glog/logging.h>
 
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

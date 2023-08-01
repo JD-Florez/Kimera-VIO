@@ -12,14 +12,14 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/StereoMatcher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
 
 #include <glog/logging.h>
 
 #include <opencv2/calib3d.hpp>
 
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

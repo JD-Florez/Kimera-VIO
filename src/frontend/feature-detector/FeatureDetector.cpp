@@ -4,13 +4,13 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
 
 #include <algorithm>
 
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"  // Just for ExtractCorners...
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"  // Just for ExtractCorners...
 
 #include <numeric>
 

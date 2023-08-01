@@ -37,16 +37,16 @@
 #include <gtsam_unstable/nonlinear/BatchFixedLagSmoother.h>
 #include <gtsam_unstable/slam/SmartStereoProjectionPoseFactor.h>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/backend/VioBackendParams.h"
-#include "kimera-vio/factors/PointPlaneFactor.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/utils/UtilsGTSAM.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/factors/PointPlaneFactor.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsGTSAM.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

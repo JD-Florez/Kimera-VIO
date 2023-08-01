@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/Camera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
 
 #include <Eigen/Core>
 
@@ -20,8 +20,8 @@
 
 #include <gtsam/geometry/Point2.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

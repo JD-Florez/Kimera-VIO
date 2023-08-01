@@ -13,7 +13,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/mesh/MeshOptimization.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshOptimization.h"
 
 #include <string>
 #include <vector>
@@ -27,16 +27,16 @@
 #include <gtsam/linear/GaussianFactorGraph.h>
 #include <gtsam/nonlinear/Marginals.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/mesh/MeshOptimization-definitions.h"
-#include "kimera-vio/mesh/MeshUtils.h"
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshOptimization-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 namespace VIO {
 

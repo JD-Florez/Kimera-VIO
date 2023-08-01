@@ -21,11 +21,11 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend.h"
-#include "kimera-vio/frontend/VisionImuFrontendModule.h"
-#include "kimera-vio/dataprovider/StereoDataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/StereoDataProviderModule.h"
 
 static constexpr int default_timeout = 100000;
 static constexpr int no_timeout = std::numeric_limits<int>::max();

@@ -19,17 +19,17 @@
 #include <atomic>
 #include <memory>
 
-#include "kimera-vio/frontend/FrontendInputPacketBase.h"
-#include "kimera-vio/frontend/FrontendOutputPacketBase.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
-#include "kimera-vio/frontend/Tracker.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendInputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendOutputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 DECLARE_bool(visualize_feature_tracks);
 DECLARE_bool(visualize_frontend_images);

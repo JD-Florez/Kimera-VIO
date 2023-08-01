@@ -25,8 +25,8 @@
 #include <gtsam/geometry/Pose3.h>
 #include <gtsam/navigation/ImuBias.h>
 
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/initial/InitializationFromImu.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/InitializationFromImu.h"
 
 namespace VIO {
 

@@ -13,7 +13,7 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/utils/UtilsGeometry.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsGeometry.h"
 
 #include <algorithm>
 #include <limits>

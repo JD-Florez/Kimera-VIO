@@ -25,9 +25,9 @@
 #include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/logging/Logger.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
 
 DECLARE_string(test_data_path);
 DECLARE_string(output_path);

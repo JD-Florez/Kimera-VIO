@@ -11,7 +11,7 @@
  * @brief  Base implementation of a data provider for the VIO pipeline.
  * @author Antoni Rosinol
  */
-#include "kimera-vio/dataprovider/DataProviderInterface-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderInterface-definitions.h"
 
 #include <fstream>
 

@@ -14,7 +14,7 @@
  * @author Marcus Abate
  */
 
-#include "kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>

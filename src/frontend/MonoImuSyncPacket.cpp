@@ -14,7 +14,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
 
 #include <utility>
 

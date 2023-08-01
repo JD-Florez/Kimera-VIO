@@ -13,22 +13,22 @@
  * @author Marcus Abate
  */
 
-#include "kimera-vio/pipeline/StereoImuPipeline.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/StereoImuPipeline.h"
 
 #include <string>
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/backend/VioBackendFactory.h"
-#include "kimera-vio/dataprovider/StereoDataProviderModule.h"
-#include "kimera-vio/frontend/VisionImuFrontendFactory.h"
-#include "kimera-vio/mesh/MesherFactory.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/visualizer/DisplayFactory.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3DFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/StereoDataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MesherFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3DFactory.h"
 
 namespace VIO {
 

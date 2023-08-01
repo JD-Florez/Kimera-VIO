@@ -25,14 +25,14 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/Tracker.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

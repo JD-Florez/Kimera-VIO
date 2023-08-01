@@ -13,13 +13,13 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 namespace VIO {
 

@@ -23,16 +23,16 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/Tracker-definitions.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 namespace VIO {
 

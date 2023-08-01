@@ -25,18 +25,18 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/VisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend.h"
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
-#include "kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
 
 namespace VIO {
 

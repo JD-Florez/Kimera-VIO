@@ -25,15 +25,15 @@
 #include <gtsam_unstable/nonlinear/IncrementalFixedLagSmoother.h>
 #include <gtsam_unstable/slam/SmartStereoProjectionPoseFactor.h>
 
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
-#include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 
@@ -321,9 +321,9 @@ struct BackendOutput : public PipelinePayload {
                 const gtsam::Matrix& state_covariance_lkf,
                 const FrameId& cur_kf_id,
                 const int& landmark_count,
-                const DebugVioInfo& debug_info,
-                const PointsWithIdMap& landmarks_with_id_map,
-                const LmkIdToLmkTypeMap& lmk_id_to_lmk_type_map)
+                const DebugVioInfo& debug_info = DebugVioInfo{},
+                const PointsWithIdMap& landmarks_with_id_map = PointsWithIdMap{},
+                const LmkIdToLmkTypeMap& lmk_id_to_lmk_type_map = LmkIdToLmkTypeMap{})
       : PipelinePayload(vio_navstate_timestamped.timestamp_),
         W_State_Blkf_(vio_navstate_timestamped),
         state_(state),
@@ -334,6 +334,14 @@ struct BackendOutput : public PipelinePayload {
         debug_info_(debug_info),
         landmarks_with_id_map_(landmarks_with_id_map),
         lmk_id_to_lmk_type_map_(lmk_id_to_lmk_type_map) {}
+
+  // BackendOutput(const VioNavStateTimestamped& vio_navstate_timestamped,
+  //               const gtsam::Values& state,
+  //               const gtsam::NonlinearFactorGraph& factor_graph,
+  //               const gtsam::Matrix& state_covariance_lkf,
+  //               const FrameId& cur_kf_id,
+  //               const int& landmark_count)
+  //     : BackendOutput(vio_navstate_timestamped, state, factor_graph, state_covariance_lkf, cur_kf_id, landmark_count, DebugVioInfo{}, PointsWithIdMap{}, LmkIdToLmkTypeMap{}) {}
 
   const VioNavStateTimestamped W_State_Blkf_;
   const gtsam::Values state_;

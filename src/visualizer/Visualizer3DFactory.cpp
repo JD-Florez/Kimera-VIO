@@ -12,8 +12,8 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/Visualizer3DFactory.h"
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3DFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
 
 namespace VIO {
 

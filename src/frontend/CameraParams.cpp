@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
 
 #include <fstream>
 #include <iostream>

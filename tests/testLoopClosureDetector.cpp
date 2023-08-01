@@ -21,15 +21,15 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/Tracker.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
-#include "kimera-vio/loopclosure/LoopClosureDetector.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 DECLARE_string(test_data_path);
 DECLARE_string(vocabulary_path);

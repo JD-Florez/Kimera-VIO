@@ -27,14 +27,14 @@
 #include <gtsam/geometry/Cal3DS2.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/dataprovider/DataProviderInterface-definitions.h"
-#include "kimera-vio/dataprovider/DataProviderInterface.h"
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
-#include "kimera-vio/frontend/StereoMatchingParams.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderInterface-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderInterface.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatchingParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

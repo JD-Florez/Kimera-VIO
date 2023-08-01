@@ -29,12 +29,12 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/viz/types.hpp>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
 
 namespace VIO {
 

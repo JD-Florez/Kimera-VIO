@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/rgbd/RgbdFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdFrame.h"
 
 namespace VIO {
 

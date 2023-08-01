@@ -14,10 +14,10 @@
 
 #pragma once
 
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/mesh/Mesher.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

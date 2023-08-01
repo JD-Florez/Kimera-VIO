@@ -19,12 +19,12 @@
 
 #include <string>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
 
 DECLARE_string(test_data_path);
 

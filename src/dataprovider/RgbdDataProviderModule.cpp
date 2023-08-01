@@ -13,10 +13,10 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/dataprovider/RgbdDataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/RgbdDataProviderModule.h"
 
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
-#include "kimera-vio/frontend/rgbd/RgbdImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdImuSyncPacket.h"
 
 namespace VIO {
 

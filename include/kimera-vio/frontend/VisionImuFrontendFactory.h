@@ -14,10 +14,10 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/VisionImuFrontend.h"
-#include "kimera-vio/frontend/MonoVisionImuFrontend.h"
-#include "kimera-vio/frontend/StereoVisionImuFrontend.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
 
 namespace VIO {
 

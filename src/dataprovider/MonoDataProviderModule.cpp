@@ -15,8 +15,8 @@
 
 #include <utility>  // for move
 
-#include "kimera-vio/dataprovider/MonoDataProviderModule.h"
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/MonoDataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
 
 namespace VIO {
 

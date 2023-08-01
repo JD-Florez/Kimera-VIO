@@ -12,13 +12,13 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 #include <math.h>
 #include <iomanip>
 #include <sys/time.h>  // For gettimeofday...
 
-#include "kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
 
 namespace VIO {
 

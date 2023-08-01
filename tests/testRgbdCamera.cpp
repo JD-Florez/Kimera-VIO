@@ -21,20 +21,20 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/frontend/rgbd/RgbdCamera.h"
-#include "kimera-vio/frontend/rgbd/RgbdFrame.h"
-#include "kimera-vio/mesh/MeshUtils.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/DisplayFactory.h"
-#include "kimera-vio/visualizer/DisplayModule.h"
-#include "kimera-vio/visualizer/OpenCvDisplayParams.h"
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3DFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3DFactory.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

@@ -28,14 +28,14 @@
 #include <gtsam/geometry/Pose3.h>
 #include <gtsam/navigation/ImuBias.h>
 
-#include "kimera-vio/backend/VioBackend.h"
-#include "kimera-vio/backend/VioBackendFactory.h"
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
-#include "kimera-vio/initial/InitializationBackend.h"
-#include "kimera-vio/utils/ThreadsafeImuBuffer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/InitializationBackend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeImuBuffer.h"
 
 DECLARE_string(test_data_path);
 

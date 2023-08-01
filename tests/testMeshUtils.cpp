@@ -19,7 +19,7 @@
 #include <opencv2/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include "kimera-vio/mesh/MeshUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshUtils.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

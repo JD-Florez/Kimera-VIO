@@ -26,12 +26,12 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/dataprovider/MonoDataProviderModule.h"
-#include "kimera-vio/frontend/rgbd/RgbdFrame.h"
-#include "kimera-vio/frontend/rgbd/RgbdImuSyncPacket.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/MonoDataProviderModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

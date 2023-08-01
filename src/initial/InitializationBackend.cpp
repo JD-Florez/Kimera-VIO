@@ -15,14 +15,14 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/initial/InitializationBackend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/InitializationBackend.h"
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/initial/OnlineGravityAlignment.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/OnlineGravityAlignment.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 namespace VIO {
 

@@ -13,11 +13,11 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/dataprovider/StereoDataProviderModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/StereoDataProviderModule.h"
 
 #include <glog/logging.h>
 
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
 
 namespace VIO {
 

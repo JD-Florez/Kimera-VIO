@@ -12,7 +12,7 @@
  * robot state as used in the factor-graph.
  * @author Antoni Rosinol
  */
-#include "kimera-vio/common/VioNavState.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
 
 #include <glog/logging.h>
 

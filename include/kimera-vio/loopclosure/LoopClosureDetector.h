@@ -25,15 +25,15 @@
 #include <utility>
 #include <vector>
 
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/loopclosure/LcdThirdPartyWrapper.h"
-#include "kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
-#include "kimera-vio/loopclosure/LoopClosureDetectorParams.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LcdThirdPartyWrapper.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetectorParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 /* ------------------------------------------------------------------------ */
 // Forward declare KimeraRPGO, a private dependency.

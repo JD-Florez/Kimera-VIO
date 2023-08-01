@@ -12,16 +12,16 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/dataprovider/DataProviderInterface.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderInterface.h"
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/backend/RegularVioBackendParams.h"
-#include "kimera-vio/backend/VioBackendParams.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
 
 namespace VIO {
 

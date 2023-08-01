@@ -8,9 +8,9 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
 
 DECLARE_string(test_data_path);
 

@@ -15,10 +15,10 @@
 
 #pragma once
 
-#include "kimera-vio/backend/RegularVioBackend.h"
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/backend/VioBackend.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

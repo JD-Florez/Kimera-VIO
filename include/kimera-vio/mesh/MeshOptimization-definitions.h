@@ -16,9 +16,9 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

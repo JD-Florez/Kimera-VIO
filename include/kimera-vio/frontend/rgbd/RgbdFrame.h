@@ -14,9 +14,9 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/rgbd/DepthFrame.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/DepthFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
 
 namespace VIO {
 

@@ -12,19 +12,19 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
 
-#include "kimera-vio/backend/RegularVioBackendParams.h"
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/backend/VioBackendParams.h"
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/VisionImuFrontend-definitions.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
-#include "kimera-vio/loopclosure/LoopClosureDetectorParams.h"
-#include "kimera-vio/visualizer/DisplayParams.h"
-#include "kimera-vio/visualizer/OpenCvDisplay.h" // for ocv display params...
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetectorParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplay.h" // for ocv display params...
 
 #include <glog/logging.h>
 

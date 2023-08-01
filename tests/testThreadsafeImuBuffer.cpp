@@ -35,9 +35,9 @@
    limitations under the License.
 *********************************************************************************/
 
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/utils/ThreadsafeImuBuffer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeImuBuffer.h"
 
 #include <glog/logging.h>
 #include <gtest/gtest.h>

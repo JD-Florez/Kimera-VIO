@@ -12,7 +12,7 @@
  * @author Antoni Rosinol, Luca Carlone
  */
 
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 #include <stdlib.h>
 #include <sys/time.h>
@@ -33,7 +33,7 @@
 #include <gtsam/geometry/Pose3.h>
 #include <gtsam/navigation/ImuBias.h>
 
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 namespace VIO {
 

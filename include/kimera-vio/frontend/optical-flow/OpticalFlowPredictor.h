@@ -19,8 +19,8 @@
 
 #include <gtsam/geometry/Rot3.h>
 
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

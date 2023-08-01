@@ -15,9 +15,9 @@
 
 #pragma once
 
-#include "kimera-vio/dataprovider/StereoDataProviderModule.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/pipeline/Pipeline.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/StereoDataProviderModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline.h"
 
 namespace VIO {
 

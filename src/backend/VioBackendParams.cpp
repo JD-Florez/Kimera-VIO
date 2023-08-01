@@ -12,7 +12,7 @@
  * @author Antoni Rosinol, Luca Carlone
  */
 
-#include "kimera-vio/backend/VioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendParams.h"
 
 #include <utility>
 

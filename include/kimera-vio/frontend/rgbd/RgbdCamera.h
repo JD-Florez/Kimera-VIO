@@ -21,11 +21,11 @@
 
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/frontend/CameraParams.h"
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/frontend/rgbd/RgbdFrame.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/CameraParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

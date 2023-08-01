@@ -16,7 +16,7 @@
 
 #include <opencv2/core/core.hpp>
 
-#include "kimera-vio/pipeline/PipelinePayload.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
 
 namespace VIO {
 

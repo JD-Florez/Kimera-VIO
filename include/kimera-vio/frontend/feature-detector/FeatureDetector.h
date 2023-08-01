@@ -18,11 +18,11 @@
 
 #include <opencv2/features2d.hpp>
 
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
-#include "kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 class FeatureDetector {

@@ -16,12 +16,12 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/DisplayParams.h"
-#include "kimera-vio/visualizer/OpenCvDisplay.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplay.h"
 #ifdef Pangolin_FOUND
-#include "kimera-vio/visualizer/PangolinDisplay.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/PangolinDisplay.h"
 #endif
 
 namespace VIO {

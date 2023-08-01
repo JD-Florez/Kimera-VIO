@@ -14,7 +14,7 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
 
 #include <algorithm>  // for max
 #include <fstream>
@@ -31,10 +31,10 @@
 #include <gtsam/geometry/Cal3DS2.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/frontend/StereoFrame.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 DEFINE_string(dataset_path,
               "/Users/Luca/data/MH_01_easy",

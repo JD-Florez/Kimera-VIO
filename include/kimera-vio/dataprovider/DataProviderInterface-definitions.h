@@ -22,9 +22,9 @@
 #include <gtsam/base/Vector.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

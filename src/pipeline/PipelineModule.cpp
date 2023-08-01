@@ -12,6 +12,6 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/pipeline/PipelineModule.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
 
 namespace VIO {}  // namespace VIO

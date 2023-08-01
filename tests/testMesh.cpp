@@ -16,7 +16,7 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/mesh/Mesh.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

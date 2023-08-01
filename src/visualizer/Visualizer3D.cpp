@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/Visualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
 
 namespace VIO {
 

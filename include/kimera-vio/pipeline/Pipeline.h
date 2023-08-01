@@ -24,18 +24,18 @@
 #include <thread>
 #include <vector>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/backend/VioBackendModule.h"
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/dataprovider/MonoDataProviderModule.h"
-#include "kimera-vio/frontend/VisionImuFrontendModule.h"
-#include "kimera-vio/loopclosure/LoopClosureDetector.h"
-#include "kimera-vio/mesh/MesherModule.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/DisplayModule.h"
-#include "kimera-vio/visualizer/Visualizer3D.h"
-#include "kimera-vio/visualizer/Visualizer3DModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/MonoDataProviderModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetector.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MesherModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3DModule.h"
 
 DECLARE_bool(log_output);
 DECLARE_bool(extract_planes_from_the_scene);

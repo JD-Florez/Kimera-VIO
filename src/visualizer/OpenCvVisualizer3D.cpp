@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
 
 #include <algorithm>      // for min
 #include <memory>         // for shared_ptr<>
@@ -33,14 +33,14 @@
 
 #include <opencv2/core/eigen.hpp>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/factors/PointPlaneFactor.h"  // For visualization of constraints.
-#include "kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
-#include "kimera-vio/utils/FilesystemUtils.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsGTSAM.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/factors/PointPlaneFactor.h"  // For visualization of constraints.
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/FilesystemUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsGTSAM.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 // TODO(Toni): remove visualizer gflags! There are far too many, use a
 // yaml params class (aka inherit from PipelineParams.

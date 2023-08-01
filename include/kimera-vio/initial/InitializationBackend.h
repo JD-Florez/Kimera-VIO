@@ -19,10 +19,10 @@
 
 #include <queue>
 
-#include "kimera-vio/backend/VioBackend.h"
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
-#include "kimera-vio/initial/InitializationBackend-definitions.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/initial/InitializationBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 namespace VIO {
 

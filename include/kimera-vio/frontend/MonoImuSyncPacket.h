@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/FrontendInputPacketBase.h"
-#include "kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendInputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
 namespace VIO {
 
 class MonoImuSyncPacket : public FrontendInputPacketBase {

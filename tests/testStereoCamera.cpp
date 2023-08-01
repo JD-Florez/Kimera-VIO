@@ -19,12 +19,12 @@
 
 #include <string>
 
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/frontend/StereoCamera.h"
-#include "kimera-vio/frontend/StereoMatcher.h"
-#include "kimera-vio/mesh/MeshUtils.h"  // a bit weird... it's for isValidPoint.
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoCamera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatcher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshUtils.h"  // a bit weird... it's for isValidPoint.
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

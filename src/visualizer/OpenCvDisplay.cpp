@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/OpenCvDisplay.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplay.h"
 
 #include <string>
 
@@ -20,10 +20,10 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/utils/FilesystemUtils.h"
-#include "kimera-vio/visualizer/DisplayParams.h"
-#include "kimera-vio/visualizer/OpenCvDisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/FilesystemUtils.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplayParams.h"
 
 namespace VIO {
 

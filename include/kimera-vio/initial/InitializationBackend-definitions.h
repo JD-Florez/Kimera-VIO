@@ -18,8 +18,8 @@
 
 #include <gtsam/navigation/AHRSFactor.h>
 
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

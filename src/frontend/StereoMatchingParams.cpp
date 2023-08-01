@@ -12,13 +12,13 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/StereoMatchingParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoMatchingParams.h"
 
 #include <glog/logging.h>
 
-#include "kimera-vio/frontend/StereoFrame-definitions.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoFrame-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

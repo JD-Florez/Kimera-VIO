@@ -33,9 +33,9 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/frontend/Tracker.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 DECLARE_string(test_data_path);
 

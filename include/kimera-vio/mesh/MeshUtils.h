@@ -20,7 +20,7 @@
 
 #include <opencv2/viz.hpp>
 
-#include "kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
 
 namespace VIO {
 

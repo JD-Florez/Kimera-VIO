@@ -20,11 +20,11 @@
 
 #include <opencv2/viz/viz3d.hpp>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 DECLARE_string(test_data_path);
 

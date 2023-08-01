@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/initial/InitializationFromImu.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/InitializationFromImu.h"
 
 #include <gtsam/base/Vector.h>
 

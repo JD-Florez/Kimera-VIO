@@ -21,12 +21,12 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/mesh/MeshOptimization.h"
-#include "kimera-vio/mesh/Mesher.h"
-#include "kimera-vio/playground/EurocPlayground.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshOptimization.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/playground/EurocPlayground.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(display);

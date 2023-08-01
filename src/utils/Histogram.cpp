@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/utils/Histogram.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Histogram.h"
 
 #include <cstddef>  // for nullptr
 

@@ -12,15 +12,15 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
 
 #include <string>
 #include <utility>
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/pipeline/PipelineParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineParams.h"
 
 namespace VIO {
 

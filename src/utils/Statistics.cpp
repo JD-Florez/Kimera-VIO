@@ -28,7 +28,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/utils/Statistics.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
 
 #include <cmath>
 #include <fstream>

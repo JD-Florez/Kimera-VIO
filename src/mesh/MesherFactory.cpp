@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/mesh/MesherFactory.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MesherFactory.h"
 
 // If you want to serialize to a file to be able to later load that mesh.
 DEFINE_bool(serialize_mesh_2d3d, false, "Serialize 2D/3D Mesh to file.");

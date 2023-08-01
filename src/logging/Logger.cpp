@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/logging/Logger.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
 
 #include <fstream>
 #include <memory>
@@ -23,10 +23,10 @@
 
 #include <gflags/gflags.h>
 
-#include "kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 DEFINE_string(output_path, "./", "Path where to store VIO's log output.");
 

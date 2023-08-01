@@ -17,7 +17,7 @@
 #include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
 
 DECLARE_string(test_data_path);
 

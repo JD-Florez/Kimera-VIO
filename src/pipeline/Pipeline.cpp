@@ -13,7 +13,7 @@
  * @author Marcus Abate
  */
 
-#include "kimera-vio/pipeline/Pipeline.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline.h"
 
 DEFINE_bool(log_output, false, "Log output to CSV files.");
 DEFINE_bool(extract_planes_from_the_scene,

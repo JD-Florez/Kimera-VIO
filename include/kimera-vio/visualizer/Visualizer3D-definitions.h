@@ -21,13 +21,13 @@
 
 #include <opencv2/viz/widgets.hpp>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/FrontendOutputPacketBase.h"
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendOutputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
 
 namespace VIO {
 

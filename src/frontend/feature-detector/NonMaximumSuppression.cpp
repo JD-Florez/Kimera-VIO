@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
 
 #include <numeric>
 #include <vector>
@@ -21,9 +21,9 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/feature-detector/anms/anms.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/anms.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 namespace VIO {
 

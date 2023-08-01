@@ -49,8 +49,8 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #include <DBoW2/QueryResults.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/loopclosure/LoopClosureDetectorParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetectorParams.h"
 
 namespace VIO {
 

@@ -13,15 +13,15 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/frontend/StereoVisionImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoVisionImuFrontend.h"
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
 #include <gtsam/geometry/Rot3.h>
 
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 DEFINE_bool(log_stereo_matching_images,
             false,

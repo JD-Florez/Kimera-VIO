@@ -28,13 +28,13 @@
 #include <gtsam/geometry/Cal3_S2.h>
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/mesh/Mesh.h"
-#include "kimera-vio/mesh/MeshOptimization-definitions.h"
-#include "kimera-vio/mesh/Mesher-definitions.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/OpenCvVisualizer3D.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/MeshOptimization-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvVisualizer3D.h"
 
 namespace VIO {
 

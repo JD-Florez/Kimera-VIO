@@ -8,10 +8,10 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/FrontendInputPacketBase.h"
-#include "kimera-vio/frontend/Tracker-definitions.h"
-#include "kimera-vio/frontend/rgbd/RgbdFrame.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendInputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/rgbd/RgbdFrame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

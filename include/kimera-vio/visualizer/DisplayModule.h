@@ -16,12 +16,12 @@
 
 #include <utility>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 namespace VIO {
 

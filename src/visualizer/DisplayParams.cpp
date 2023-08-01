@@ -12,13 +12,13 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/DisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
 
 #include <fstream>
 #include <iostream>
 
-#include "kimera-vio/utils/YamlParser.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
 
 namespace VIO {
 

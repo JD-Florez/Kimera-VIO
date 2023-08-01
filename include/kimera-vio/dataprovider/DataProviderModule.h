@@ -26,11 +26,11 @@
 
 #include <glog/logging.h>
 
-#include "kimera-vio/frontend/FrontendInputPacketBase.h"
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
-#include "kimera-vio/pipeline/Pipeline-definitions.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendInputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
 
 namespace VIO {
 

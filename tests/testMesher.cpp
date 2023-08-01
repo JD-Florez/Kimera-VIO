@@ -21,7 +21,7 @@
 #include <gtest/gtest.h>
 #include <gflags/gflags.h>
 
-#include "kimera-vio/mesh/Mesher.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
 
 DECLARE_string(test_data_path);
 

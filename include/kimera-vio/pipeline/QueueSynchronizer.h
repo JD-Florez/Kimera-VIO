@@ -18,11 +18,11 @@
 #include <numeric>  // for numeric_limits
 #include <string>
 
-#include "kimera-vio/common/vio_types.h"
-#include "kimera-vio/pipeline/PipelinePayload.h"
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/utils/Timer.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/common/vio_types.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelinePayload.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
 
 namespace VIO {
 

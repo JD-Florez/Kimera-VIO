@@ -42,7 +42,7 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/utils/ThreadsafeTemporalBuffer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeTemporalBuffer.h"
 
 namespace VIO {
 

@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/Display-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
 
 #include <opencv2/opencv.hpp>
 

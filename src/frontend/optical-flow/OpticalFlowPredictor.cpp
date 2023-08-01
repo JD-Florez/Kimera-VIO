@@ -13,14 +13,14 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictor.h"
 
 #include <opencv2/opencv.hpp>
 
 #include <gtsam/geometry/Rot3.h>
 
-#include "kimera-vio/frontend/optical-flow/OpticalFlowVisualizer.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowVisualizer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
 
 namespace VIO {
 

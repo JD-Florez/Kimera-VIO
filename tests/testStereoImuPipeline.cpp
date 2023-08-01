@@ -6,8 +6,8 @@
 #include <glog/logging.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/pipeline/StereoImuPipeline.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/StereoImuPipeline.h"
 
 DECLARE_string(test_data_path);
 DECLARE_bool(visualize);

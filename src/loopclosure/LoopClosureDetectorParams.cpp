@@ -12,7 +12,7 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/loopclosure/LoopClosureDetectorParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LoopClosureDetectorParams.h"
 
 namespace VIO {
 

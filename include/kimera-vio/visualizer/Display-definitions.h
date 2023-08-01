@@ -16,8 +16,8 @@
 
 #include <opencv2/viz.hpp>
 
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 namespace VIO {
 

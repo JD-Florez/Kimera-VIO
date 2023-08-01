@@ -28,8 +28,8 @@
 #include <gtsam/navigation/AHRSFactor.h>
 #include <gtsam/navigation/ImuFactor.h>
 
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/initial/OnlineGravityAlignment-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/initial/OnlineGravityAlignment-definitions.h"
 
 namespace VIO {
 

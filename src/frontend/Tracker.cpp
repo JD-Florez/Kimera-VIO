@@ -5,7 +5,7 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/frontend/Tracker.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Tracker.h"
 
 #include <time.h>
 #include <algorithm>   // for sort
@@ -21,11 +21,11 @@
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-#include "kimera-vio/frontend/UndistorterRectifier.h"
-#include "kimera-vio/frontend/optical-flow/OpticalFlowPredictorFactory.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsOpenCV.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/UndistorterRectifier.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/optical-flow/OpticalFlowPredictorFactory.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
 
 DEFINE_bool(visualize_feature_predictions,
             false,

@@ -27,7 +27,7 @@
  * @author Luca Carlone
  */
 
-#include "kimera-vio/backend/VioBackend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend.h"
 
 #include <limits>  // for numeric_limits<>
 #include <map>
@@ -38,12 +38,12 @@
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/common/VioNavState.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"  // for safeCast
-#include "kimera-vio/logging/Logger.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/common/VioNavState.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"  // for safeCast
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/logging/Logger.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 DEFINE_bool(debug_graph_before_opt,
             false,

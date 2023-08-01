@@ -16,12 +16,12 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "kimera-vio/pipeline/Pipeline-definitions.h"  // Needed for shutdown cb
-#include "kimera-vio/utils/Macros.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
-#include "kimera-vio/visualizer/Display.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
-#include "kimera-vio/visualizer/OpenCvDisplayParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"  // Needed for shutdown cb
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/OpenCvDisplayParams.h"
 
 namespace VIO {
 

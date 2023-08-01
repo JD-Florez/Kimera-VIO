@@ -18,8 +18,8 @@
 #include <functional>
 #include <string>
 
-#include "kimera-vio/dataprovider/DataProviderInterface.h"
-#include "kimera-vio/frontend/StereoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/DataProviderInterface.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/StereoImuSyncPacket.h"
 
 namespace VIO {
 

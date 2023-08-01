@@ -12,14 +12,14 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/imu-frontend/ImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontendParams.h"
 
 #include <glog/logging.h>
 
 #include <gtsam/geometry/Pose3.h>
 
-#include "kimera-vio/utils/UtilsOpenCV.h"
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsOpenCV.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

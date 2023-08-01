@@ -12,11 +12,11 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
-#include "kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
-#include "kimera-vio/frontend/feature-detector/anms/anms.h"  // REMOVE
-#include "kimera-vio/utils/YamlParser.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetectorParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/NonMaximumSuppression.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/anms/anms.h"  // REMOVE
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/YamlParser.h"
 
 namespace VIO {
 

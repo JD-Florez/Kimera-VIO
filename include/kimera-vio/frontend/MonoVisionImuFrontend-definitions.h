@@ -16,10 +16,10 @@
 
 #include <gtsam/geometry/StereoPoint2.h>
 
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/frontend/FrontendOutputPacketBase.h"
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
-#include "kimera-vio/frontend/VisionImuFrontendParams.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/FrontendOutputPacketBase.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontendParams.h"
 
 namespace VIO {
 

@@ -12,9 +12,9 @@
  * @author Antoni Rosinol
  */
 
-#include "kimera-vio/visualizer/Display.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display.h"
 
-#include "kimera-vio/visualizer/DisplayParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/DisplayParams.h"
 
 namespace VIO {
 

@@ -16,19 +16,19 @@
 
 #include <memory>
 
-#include "kimera-vio/backend/VioBackend-definitions.h"
-#include "kimera-vio/frontend/Camera.h"
-#include "kimera-vio/frontend/Frame.h"
-#include "kimera-vio/frontend/MonoImuSyncPacket.h"
-#include "kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
-#include "kimera-vio/frontend/VisionImuFrontend.h"
-#include "kimera-vio/frontend/feature-detector/FeatureDetector.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
-#include "kimera-vio/utils/Statistics.h"
-#include "kimera-vio/utils/ThreadsafeQueue.h"
-#include "kimera-vio/utils/Timer.h"
-#include "kimera-vio/visualizer/Display-definitions.h"
-#include "kimera-vio/visualizer/Visualizer3D-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Camera.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/Frame.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoImuSyncPacket.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/feature-detector/FeatureDetector.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Statistics.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeQueue.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Timer.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Display-definitions.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/visualizer/Visualizer3D-definitions.h"
 
 namespace VIO {
 

@@ -12,7 +12,7 @@
  * @author Marcus Abate
  */
 
-#include "kimera-vio/frontend/VisionImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend.h"
 
 DEFINE_bool(visualize_feature_tracks, true, "Display feature tracks.");
 DEFINE_bool(visualize_frontend_images,

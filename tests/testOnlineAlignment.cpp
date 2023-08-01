@@ -17,11 +17,11 @@
 #include <gtest/gtest.h>
 #include <math.h>
 
-#include "kimera-vio/dataprovider/EurocDataProvider.h"
-#include "kimera-vio/imu-frontend/ImuFrontend-definitions.h"
-#include "kimera-vio/imu-frontend/ImuFrontend.h"
-#include "kimera-vio/initial/OnlineGravityAlignment.h"
-#include "kimera-vio/utils/ThreadsafeImuBuffer.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/dataprovider/EurocDataProvider.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend-definitions.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/imu-frontend/ImuFrontend.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/initial/OnlineGravityAlignment.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/ThreadsafeImuBuffer.h"
 
 DECLARE_string(test_data_path);
 

@@ -15,7 +15,7 @@
 #include <gflags/gflags.h>
 #include <gtest/gtest.h>
 
-#include "kimera-vio/backend/RegularVioBackendParams.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/RegularVioBackendParams.h"
 
 DECLARE_string(test_data_path);
 

@@ -14,8 +14,8 @@
 
 #pragma once
 
-#include "kimera-vio/frontend/VisionImuFrontend.h"
-#include "kimera-vio/pipeline/PipelineModule.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/VisionImuFrontend.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
 
 namespace VIO {
 

@@ -49,7 +49,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "kimera-vio/loopclosure/LcdThirdPartyWrapper.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/loopclosure/LcdThirdPartyWrapper.h"
 
 namespace VIO {
 

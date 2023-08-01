@@ -21,7 +21,7 @@
 
 #include <gtest/gtest.h>
 
-#include "kimera-vio/utils/UtilsNumerical.h"
+#include "../../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/UtilsNumerical.h"
 
 namespace VIO {
 
