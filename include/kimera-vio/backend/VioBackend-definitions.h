@@ -335,14 +335,6 @@ struct BackendOutput : public PipelinePayload {
         landmarks_with_id_map_(landmarks_with_id_map),
         lmk_id_to_lmk_type_map_(lmk_id_to_lmk_type_map) {}
 
-  // BackendOutput(const VioNavStateTimestamped& vio_navstate_timestamped,
-  //               const gtsam::Values& state,
-  //               const gtsam::NonlinearFactorGraph& factor_graph,
-  //               const gtsam::Matrix& state_covariance_lkf,
-  //               const FrameId& cur_kf_id,
-  //               const int& landmark_count)
-  //     : BackendOutput(vio_navstate_timestamped, state, factor_graph, state_covariance_lkf, cur_kf_id, landmark_count, DebugVioInfo{}, PointsWithIdMap{}, LmkIdToLmkTypeMap{}) {}
-
   const VioNavStateTimestamped W_State_Blkf_;
   const gtsam::Values state_;
   const gtsam::Matrix state_covariance_lkf_;
