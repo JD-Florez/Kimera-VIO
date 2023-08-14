@@ -40,11 +40,11 @@ class MonoVisionImuFrontend : public VisionImuFrontend {
 
  public:
   MonoVisionImuFrontend(const ImuParams& imu_params,
-                     const ImuBias& imu_initial_bias,
-                     const MonoFrontendParams& frontend_params,
-                     const Camera::ConstPtr& camera,
-                     DisplayQueue* display_queue = nullptr,
-                     bool log_output = false);
+                        const ImuBias& imu_initial_bias,
+                        const MonoFrontendParams& frontend_params,
+                        const Camera::ConstPtr& camera,
+                        DisplayQueue* display_queue = nullptr,
+                        bool log_output = false);
   virtual ~MonoVisionImuFrontend();
 
  private:

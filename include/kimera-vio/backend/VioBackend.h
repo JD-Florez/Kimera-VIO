@@ -25,13 +25,6 @@
 
 #pragma once
 
-#include <fstream>
-#include <iostream>
-#include <memory>
-#include <unordered_map>
-
-#include <boost/foreach.hpp>
-
 #include <gtsam/geometry/Cal3DS2.h>
 #include <gtsam/geometry/Cal3_S2.h>
 #include <gtsam/geometry/StereoCamera.h>
@@ -46,6 +39,12 @@
 #include <gtsam/slam/PriorFactor.h>
 #include <gtsam_unstable/nonlinear/BatchFixedLagSmoother.h>
 #include <gtsam_unstable/slam/SmartStereoProjectionPoseFactor.h>
+
+#include <boost/foreach.hpp>
+#include <fstream>
+#include <iostream>
+#include <memory>
+#include <unordered_map>
 
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackend-definitions.h"
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/backend/VioBackendParams.h"
@@ -138,7 +137,9 @@ class VioBackend {
         initializeFromIMU(input);
         break;
       }
-      default: { LOG(FATAL) << "Wrong initialization mode."; }
+      default: {
+        LOG(FATAL) << "Wrong initialization mode.";
+      }
     }
     // Signal that the Backend has been initialized.
     backend_state_ = BackendState::Nominal;
@@ -178,8 +179,10 @@ class VioBackend {
         VioNavStateTimestamped(input.timestamp_, initial_state_estimate));
   }
 
+  // to prevent deprecated warnings
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
   inline void saveGraph(const std::string& filepath) const {
-    OfstreamWrapper ofstream_wrapper (filepath);
+    OfstreamWrapper ofstream_wrapper(filepath);
     smoother_->getFactors().saveGraph(ofstream_wrapper.ofstream_);
   }
 

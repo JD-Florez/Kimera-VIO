@@ -46,7 +46,7 @@ struct MonoFrontendOutput : public FrontendOutputPacketBase {
       const gtsam::Pose3& relative_pose_body,
       const gtsam::Pose3& b_Pose_cam_rect,
       const Frame& frame_lkf,
-      const ImuFrontend::PimPtr& pim,
+      const ImuFrontend::PimPtr& pim = ImuFrontend::PimPtr{},
       const ImuAccGyrS& imu_acc_gyrs = ImuAccGyrS{},
       const cv::Mat& feature_tracks = cv::Mat{},
       const DebugTrackerInfo& debug_tracker_info = DebugTrackerInfo{})
