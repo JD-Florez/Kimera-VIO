@@ -14,14 +14,14 @@
 
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
 
-#include <utility>  // for make_pair
-#include <vector>
-
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 #include <math.h>
+
 #include <algorithm>
 #include <opencv2/imgproc.hpp>
+#include <utility>  // for make_pair
+#include <vector>
 
 // For serialization of meshes
 #include <boost/archive/text_iarchive.hpp>
@@ -1160,9 +1160,8 @@ void Mesher::segmentHorizontalPlanes(std::vector<Plane>* horizontal_planes,
                    << peak_it->pos_;
       peak_it = peaks.erase(peak_it);
       i--;
-    } else if (i > 0 &&
-               std::fabs(previous_plane_distance - plane_distance) <
-                   FLAGS_z_histogram_min_separation) {
+    } else if (i > 0 && std::fabs(previous_plane_distance - plane_distance) <
+                            FLAGS_z_histogram_min_separation) {
       // Not enough separation between planes, delete the one with less support.
       if (previous_peak_it->support_ < peak_it->support_) {
         // Delete previous_peak.
@@ -1326,8 +1325,9 @@ void Mesher::associatePlanes(const std::vector<Plane>& segmented_planes,
             }
           }
         } else {
-          VLOG(0) << "Plane " << gtsam::DefaultKeyFormatter(
-                                     plane_backend.getPlaneSymbol().key())
+          VLOG(0) << "Plane "
+                  << gtsam::DefaultKeyFormatter(
+                         plane_backend.getPlaneSymbol().key())
                   << " from Backend not associated to new segmented plane "
                   << gtsam::DefaultKeyFormatter(
                          segmented_plane.getPlaneSymbol())
@@ -1440,10 +1440,13 @@ void Mesher::updateMesh3D(const PointsWithIdMap& points_with_id_VIO,
 void Mesher::updateMesh3D(const MesherInput& mesher_payload,
                           Mesh2D* mesh_2d,
                           std::vector<cv::Vec6f>* mesh_2d_for_viz) {
-  const StereoFrame& stereo_frame =
-      mesher_payload.frontend_output_->stereo_frame_lkf_;
-  const StatusKeypointsCV& right_keypoints = 
-      stereo_frame.right_keypoints_rectified_;
+  // const StereoFrame& stereo_frame =
+  //     mesher_payload.frontend_output_->stereo_frame_lkf_;
+  // SATSLAM, changed to mono frame
+  const Frame& mono_frame = mesher_payload.frontend_output_->frame_lkf_;
+  // const StatusKeypointsCV& right_keypoints =
+  //     stereo_frame.right_keypoints_rectified_;
+  const StatusKeypointsCV& right_keypoints = mono_frame.keypoints_undistorted_;
   std::vector<KeypointStatus> right_keypoint_status;
   right_keypoint_status.reserve(right_keypoints.size());
   for (const StatusKeypointCV& kpt : right_keypoints) {
@@ -1451,10 +1454,11 @@ void Mesher::updateMesh3D(const MesherInput& mesher_payload,
   }
 
   updateMesh3D(mesher_payload.backend_output_->landmarks_with_id_map_,
-               stereo_frame.left_frame_.keypoints_,
+               //  stereo_frame.left_frame_.keypoints_,
+               mono_frame.keypoints_,
                right_keypoint_status,
                stereo_frame.keypoints_3d_,
-               stereo_frame.left_frame_.landmarks_,
+               mono_frame.landmarks_,
                mesher_payload.backend_output_->W_State_Blkf_.pose_.compose(
                    mesher_params_.B_Pose_camLrect_),
                mesh_2d,

@@ -18,6 +18,8 @@
 #include "../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesher.h"
 #include "../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/PipelineModule.h"
 #include "../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
+
 
 namespace VIO {
 
@@ -25,7 +27,9 @@ class MesherModule : public MIMOPipelineModule<MesherInput, MesherOutput> {
  public:
   KIMERA_POINTER_TYPEDEFS(MesherModule);
   KIMERA_DELETE_COPY_CONSTRUCTORS(MesherModule);
-  using MesherFrontendInput = StereoFrontendOutput::Ptr;
+  // SATSLAM, adapted this to take in a mono frontend output
+  using MesherFrontendInput = MonoFrontendOutput::Ptr;
+  //using MesherFrontendInput = StereoFrontendOutput::Ptr;
   using MesherBackendInput = BackendOutput::Ptr;
   // TODO(Toni): using this callback generates copies...
   using MesherOutputCallback = std::function<void(const MesherOutput& output)>;

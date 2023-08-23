@@ -26,6 +26,8 @@
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/mesh/Mesh.h"
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/pipeline/Pipeline-definitions.h"
 #include "../../../Thirdparty/Kimera-VIO/include/kimera-vio/utils/Macros.h"
+#include "../Thirdparty/Kimera-VIO/include/kimera-vio/frontend/MonoVisionImuFrontend-definitions.h"
+
 
 namespace VIO {
 
@@ -82,7 +84,9 @@ struct MesherInput : public PipelinePayload {
   // Copy the pointers so that we do not need to copy the data, we will
   // reference to it via the copied pointers.
   MesherInput(const Timestamp& timestamp,
-              const StereoFrontendOutput::Ptr& frontend_payload,
+              // const StereoFrontendOutput::Ptr& frontend_payload,
+              // SATSLAM, adapted to Mono
+              const MonoFrontendOutput::Ptr& frontend_payload,
               const BackendOutput::Ptr& backend_payload)
       : PipelinePayload(timestamp),
         frontend_output_(frontend_payload),
@@ -95,7 +99,7 @@ struct MesherInput : public PipelinePayload {
   virtual ~MesherInput() = default;
 
   // Copy the pointers so that we do not need to copy the data.
-  const StereoFrontendOutput::ConstPtr frontend_output_;
+  const MonoFrontendOutput::ConstPtr frontend_output_;
   const BackendOutput::ConstPtr backend_output_;
 };
 
