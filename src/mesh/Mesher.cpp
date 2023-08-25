@@ -1444,6 +1444,9 @@ void Mesher::updateMesh3D(const MesherInput& mesher_payload,
   //     mesher_payload.frontend_output_->stereo_frame_lkf_;
   // SATSLAM, changed to mono frame
   const Frame& mono_frame = mesher_payload.frontend_output_->frame_lkf_;
+  const std::vector<gtsam::Vector3>& mesher_landmarks =
+      mesher_payload.frontend_output_->mesher_landmarks_;
+
   // const StatusKeypointsCV& right_keypoints =
   //     stereo_frame.right_keypoints_rectified_;
   const StatusKeypointsCV& right_keypoints = mono_frame.keypoints_undistorted_;
@@ -1454,11 +1457,10 @@ void Mesher::updateMesh3D(const MesherInput& mesher_payload,
   }
 
   updateMesh3D(mesher_payload.backend_output_->landmarks_with_id_map_,
-               //  stereo_frame.left_frame_.keypoints_,
-               mono_frame.keypoints_,
+               mono_frame.keypoints_,  //  stereo_frame.left_frame_.keypoints_,
                right_keypoint_status,
-               stereo_frame.keypoints_3d_,
-               mono_frame.landmarks_,
+               mesher_landmarks,       // stereo_frame.keypoints_3d_,
+               mono_frame.landmarks_,  // stereo_frame.left_frame_.landmarks_,
                mesher_payload.backend_output_->W_State_Blkf_.pose_.compose(
                    mesher_params_.B_Pose_camLrect_),
                mesh_2d,
